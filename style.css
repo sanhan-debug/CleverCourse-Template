@@ -79,7 +79,7 @@
 
 #learn-more{
     width: 100%;
-    background-color: antiquewhite;
+    background-color: rgb(250, 243, 234);
     height: 100px;
 }
 .learn-wrapper{
@@ -109,4 +109,95 @@
 .courses-images{
     display: flex;
     gap: 40px;
+}
+
+
+
+
+/* footer contact section */
+
+#footer-contact{
+    width: 100%;
+    background-color: #72d5cd;
+    height: 150px;
+}
+.contact-wrapper{
+    margin-top: 60px;
+    display: flex;   
+    
+}
+
+
+/* footer section */
+
+
+#footer{
+  width: 100%;
+  background-color: #262626;
+  color: white;
+}
+.footer{
+  height: 400px;
+  display: flex;
+  gap: 30px;
+}
+
+
+.footer-about{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-top: 40px ; 
+  gap: 20px;
+  /* h4{
+    margin-bottom: 95px;
+  } */
+}
+
+
+
+
+
+.footer-tag{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .tag-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+
+.footer-recent{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  img{
+    width: 60px;
+    height: 60px;
+  }
+  .post{
+    display: flex;
+    gap: 20px;
+    font-weight: 100;
+  }
+}
+
+
+
+.footer-posts{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 45%;
+  .posts-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
