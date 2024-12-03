@@ -1,4 +1,56 @@
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* container first */
+
+.container {
+  .register {
+    ul {
+      display: flex;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: darkgray;
+        margin: 15px;
+      }
+    }
+  }
+}
+
+/* header */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    margin: 40px;
+  }
+
+  .links {
+    margin: 40px;
+    ul {
+      display: flex;
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: black;
+        margin: 40px;
+        font-family: bold;
+      }
+    }
+  }
+}
+
+/* header end */
+
+
+
 .hero-wrapper{
     margin-top: 50px;
     display: flex;
