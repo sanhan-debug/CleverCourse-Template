@@ -1,199 +1,211 @@
-/* Reset */
+
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-/* Container */
+/* container first */
+
 .container {
-  display: flex;
-  flex-direction: column;
+
+    .contact-text{ 
+        span{
+            margin: 10px;
+        }
+    }
+  .register {
+    ul {
+      display: flex;
+      list-style-type: none;
+     
+      a {
+        text-decoration: none;
+        color: darkgray;
+        margin: 15px;
+      }
+    }
+  }
 }
 
-.container .contact-text span {
-  margin: 10px;
-}
-
-/* Register Section */
-.container .register ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.container .register a {
-  text-decoration: none;
-  color: darkgray;
-  margin: 15px;
-}
-
-/* Header */
+/* header */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .logo {
+    margin: 20px;
+  }
+
+  .links {
+    margin: 20px;
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 10px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        margin: 25px;
+        font-family: bold;
+      }
+    }
+  }
 }
 
-.container .logo {
-  margin: 20px;
+/* header end */
+
+
+/* hero section */
+.hero-wrapper{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    width: 400px;
+    color: rgb(154, 154, 154);
+    h3{
+        font-size: 18px;
+        color: black;
+    }
+    i{
+        font-size: 30px;
+    }
 }
 
-.container .links {
-  margin: 20px;
+
+
+/* learn section */
+
+
+#learn-more{
+    width: 100%;
+    background-color: rgb(250, 243, 234);
+    height: 100px;
+}
+.learn-wrapper{
+    margin-top: 60px;
+    display: flex;   
+    
 }
 
-.container .links ul {
-  display: flex;
-  list-style-type: none;
-  gap: 10px;
+
+
+/* courses section */
+
+
+
+.courses-wrapper{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.courses-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.courses-images{
+    display: flex;
+    gap: 40px;
 }
 
-.container .links a {
-  text-decoration: none;
-  color: black;
-  margin: 25px;
-  font-weight: bold; /* corrected font-weight */
+
+
+
+/* footer contact section */
+
+#footer-contact{
+    width: 100%;
+    background-color: #72d5cd;
+    height: 150px;
+}
+.contact-wrapper{
+    margin-top: 60px;
+    display: flex;   
+    
 }
 
-/* Hero Section */
-.hero-wrapper {
-  margin-top: 50px;
-  display: flex;
-  gap: 20px;
-}
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 20px;
-  width: 400px;
-  color: rgb(154, 154, 154);
-}
+/* footer section */
 
-.hero h3 {
-  font-size: 18px;
-  color: black;
-}
 
-.hero i {
-  font-size: 30px;
-}
-
-/* Learn Section */
-#learn-more {
-  width: 100%;
-  background-color: rgb(250, 243, 234);
-  height: 100px;
-}
-
-.learn-wrapper {
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;  /* adjust based on requirement */
-  align-items: center;      /* adjust based on requirement */
-}
-
-/* Courses Section */
-.courses-wrapper {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.courses-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.courses-images {
-  display: flex;
-  gap: 40px;
-}
-
-/* Footer Contact Section */
-#footer-contact {
-  width: 100%;
-  background-color: #72d5cd;
-  height: 150px;
-}
-
-.contact-wrapper {
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Footer Section */
-#footer {
+#footer{
   width: 100%;
   background-color: #262626;
   color: white;
 }
-
-.footer {
+.footer{
   height: 400px;
   display: flex;
   gap: 30px;
 }
 
-/* Footer About */
-.footer-about {
+
+.footer-about{
   width: 45%;
   display: flex;
   flex-direction: column;
   text-align: start;
-  margin-top: 40px;
+  margin-top: 40px ; 
   gap: 20px;
+  /* h4{
+    margin-bottom: 95px;
+  } */
 }
 
-/* Footer Tag */
-.footer-tag {
+
+
+
+
+.footer-tag{
   width: 45%;
   display: flex;
   flex-direction: column;
   gap: 50px;
+  .tag-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
-.footer-tag .tag-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 
-/* Footer Recent */
-.footer-recent {
+.footer-recent{
   width: 45%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  img{
+    width: 60px;
+    height: 60px;
+  }
+  .post{
+    display: flex;
+    gap: 20px;
+    font-weight: 100;
+  }
 }
 
-.footer-recent img {
-  width: 60px;
-  height: 60px;
-}
 
-.footer-recent .post {
-  display: flex;
-  gap: 20px;
-  font-weight: 100;
-}
 
-/* Footer Posts */
-.footer-posts {
+.footer-posts{
   display: flex;
   flex-direction: column;
   gap: 40px;
   width: 45%;
-}
-
-.footer-posts .posts-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  .posts-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
