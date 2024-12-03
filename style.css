@@ -81,6 +81,19 @@
 }
 
 
+/*  slider 2 css */
+
+  
+/*  slider 2 css end */
+
+
+#inputs{
+    background-image: url(image/slider-1.jpg);
+    height: 300px;
+    width: 100%;
+    background-repeat:no-repeat;
+}
+
 
 /* learn section */
 
@@ -158,9 +171,7 @@
   text-align: start;
   margin-top: 40px ; 
   gap: 20px;
-  /* h4{
-    margin-bottom: 95px;
-  } */
+  
 }
 
 
@@ -208,4 +219,4 @@
     flex-direction: column;
     gap: 10px;
   }
-}
+  }
