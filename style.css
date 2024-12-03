@@ -1,94 +1,199 @@
-
+/* Reset */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* container first */
-
+/* Container */
 .container {
-
-    .contact-text{ 
-        span{
-            margin: 10px;
-        }
-    }
-  .register {
-    ul {
-      display: flex;
-      list-style-type: none;
-     
-      a {
-        text-decoration: none;
-        color: darkgray;
-        margin: 15px;
-      }
-    }
-  }
+  display: flex;
+  flex-direction: column;
 }
 
-/* header */
+.container .contact-text span {
+  margin: 10px;
+}
+
+/* Register Section */
+.container .register ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.container .register a {
+  text-decoration: none;
+  color: darkgray;
+  margin: 15px;
+}
+
+/* Header */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  .logo {
-    margin: 20px;
-  }
-
-  .links {
-    margin: 20px;
-    ul {
-      display: flex;
-      list-style-type: none;
-      gap: 10px;
-
-      a {
-        text-decoration: none;
-        color: black;
-        margin: 25px;
-        font-family: bold;
-      }
-    }
-  }
 }
 
-/* header end */
-
-
-
-.hero-wrapper{
-    margin-top: 50px;
-    display: flex;
-    gap: 20px;
-}
-.hero{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    width: 400px;
-    color: rgb(154, 154, 154);
-    h3{
-        font-size: 18px;
-        color: black;
-    }
-    i{
-        font-size: 30px;
-    }
+.container .logo {
+  margin: 20px;
 }
 
-/*  slider 2 css */
+.container .links {
+  margin: 20px;
+}
 
-  
-/*  slider 2 css end */
+.container .links ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
 
+.container .links a {
+  text-decoration: none;
+  color: black;
+  margin: 25px;
+  font-weight: bold; /* corrected font-weight */
+}
 
-#inputs{
-    background-image: url(image/slider-1.jpg);
-    height: 300px;
-    width: 100%;
-    background-repeat:no-repeat;
+/* Hero Section */
+.hero-wrapper {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  width: 400px;
+  color: rgb(154, 154, 154);
+}
+
+.hero h3 {
+  font-size: 18px;
+  color: black;
+}
+
+.hero i {
+  font-size: 30px;
+}
+
+/* Learn Section */
+#learn-more {
+  width: 100%;
+  background-color: rgb(250, 243, 234);
+  height: 100px;
+}
+
+.learn-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;  /* adjust based on requirement */
+  align-items: center;      /* adjust based on requirement */
+}
+
+/* Courses Section */
+.courses-wrapper {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.courses-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.courses-images {
+  display: flex;
+  gap: 40px;
+}
+
+/* Footer Contact Section */
+#footer-contact {
+  width: 100%;
+  background-color: #72d5cd;
+  height: 150px;
+}
+
+.contact-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Section */
+#footer {
+  width: 100%;
+  background-color: #262626;
+  color: white;
+}
+
+.footer {
+  height: 400px;
+  display: flex;
+  gap: 30px;
+}
+
+/* Footer About */
+.footer-about {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+/* Footer Tag */
+.footer-tag {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer-tag .tag-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Footer Recent */
+.footer-recent {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-recent img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-recent .post {
+  display: flex;
+  gap: 20px;
+  font-weight: 100;
+}
+
+/* Footer Posts */
+.footer-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 45%;
+}
+
+.footer-posts .posts-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
